@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Me</title>
+  <title>Contact | Me</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -24,15 +24,25 @@
 
   <div id="main-container" class="container">
     <section class="main-section">
-      <h1>About Me</h1>
+      <h1>Contact</h1>
 
-      <img src="assets/images/profile_pic2.jpg" class="auth-image" alt="Your Name">
-
-      <p>Hello, my name is Patrick Ellis, I am currently an automotive technician aspring to be a prominent web developer. Although it seems like a drastic change, I do believe I can bring several skills, such as: <em>Problem Solving</em>, <em>Patience</em>, and <em>Ambition.</em> </p> 
-
-      <p>I enjoy spending time with my lovely fiancee, Liz and my dog, Lucy. They both bring great joy to my life and are one of the reasons I'm choosing to take this path. I want to be able to provide a comforting and stress free life, and gaining all this experience has definitely created a spark to learn these valuable, new set of skills.</p>
-
-      
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
     </section>
 
@@ -46,4 +56,3 @@
 </body>
 
 </html>
-
